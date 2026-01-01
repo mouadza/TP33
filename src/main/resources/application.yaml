@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-k8s
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  server:
+    port: 8081
